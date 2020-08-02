@@ -85,7 +85,7 @@ parser.add_argument('--edgetpu', help='Use Coral Edge TPU Accelerator to speed u
 args = parser.parse_args()
 
 MODEL_NAME = args.modeldir
-STREAM_URL = args.streamurl
+STREAM_URL = "https://192.168.0.100:8090/video"
 GRAPH_NAME = args.graph
 LABELMAP_NAME = args.labels
 min_conf_threshold = float(args.threshold)
